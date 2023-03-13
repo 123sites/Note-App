@@ -3,6 +3,10 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs');
 
+// Helper method for generating unique ids
+const uuid = require('./helpers/uuid');
+
+
 // Api/index.js/start
 // Sets up the server
 const PORT = process.env.PORT || 3001;
@@ -112,7 +116,13 @@ app.post('/api/notes', (req, res) => {
 
 
 ////////////////////////////////////////////////////////////////////////////
-// Api route, delete request
+// You haven’t learned how to handle DELETE requests, but this application 
+// offers that functionality on the front end. As a bonus, try to add the DELETE route to the application using the following guideline:
+
+// * `DELETE /api/notes/:id` should receive a query parameter that contains the id of a note to delete. To delete a note, you'll need 
+// to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
+
+// // Api route, delete request
 app.delete("/api/notes/:id", function(req, res) {
   deleteNote = parseInt(req.params.id);
   readFileAsync("./db/db.json", "utf8").then(function(data) {
