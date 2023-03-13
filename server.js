@@ -5,14 +5,14 @@ const fs = require('fs');
 
 // Helper method for generating unique ids
 const uuid = require('./helpers/uuid');
-
+ 
 
 // Api/index.js/start
 // Sets up the server
 const PORT = process.env.PORT || 3001;
-
+ 
 const app = express();
-
+ 
 // Sets up Express App
 // Middleware for parsing JSON and urlencoded form data
 app.use(express.json());
@@ -64,7 +64,7 @@ app.post('/api/notes', (req, res) => {
 
   // DELETE NEXT 2 LINES???
   // Destructuring assignment for the items in req.body
-  const { note } = req.body;
+  const { note } = req.body;  
 
   // If all the required properties are present
   if (note) {
@@ -74,33 +74,33 @@ app.post('/api/notes', (req, res) => {
     };
 
     // GET api notes
-    app.get('./db/notes', (req, res) => {
+    app.get('./db/notes', (req, res) => { 
     // Reads the db.json file and return all saved notes as JSON.
     fs.readFile('./db/db.json', 'utf8', (err, data) => {
-      console.log('Getting notes');
+      console.log('Getting notes'); 
       if (err) {
         console.error(err);
       } else {
         // Convert string into JSON object
-        let parsedNotes = JSON.parse(data);
+        let parsedNotes = JSON.parse(data); 
 
         // Add a new note
         // let newNote = req.body;
-        parsedNotes.push(newNote);
+        parsedNotes.push(newNote); 
 
         // Write updated notes back to the file
         fs.writeFile(
-          './db/notes',
+          './db/notes', 
           JSON.stringify(parsedNotes, null, 4),
           (writeErr) =>
             writeErr
-              ? console.error(writeErr)
+              ? console.error(writeErr) 
               : console.info('Successfully updated notes!')
         );
       }
     });
 
-    const response = {
+    const response = { 
       status: 'success',
       body: newNote,
     };
@@ -108,7 +108,7 @@ app.post('/api/notes', (req, res) => {
     console.log(response);
     res.status(201).json(response);
   } else {
-    res.status(500).json('Error in posting note');
+    res.status(500).json('Error in posting note'); 
   }
 });
 
@@ -130,7 +130,7 @@ app.delete("/api/notes/:id", function(req, res) {
     const notesNew = []
     for (let i = 0; i<notes.length; i++){
       if(deleteNote !== notes[i].id) {
-        notesNew.push(notes[i])
+        notesNew.push(notes[i]) 
       }
     }
     return notesNew
@@ -141,7 +141,7 @@ app.delete("/api/notes/:id", function(req, res) {
   })
 
   // HTML routes
-  app.get("/db/notes", function(req, res) {
+  app.get("/db/notes", function(req, res) { 
     res.sendFile(path.join(__dirname, "./public/notes.html"));
   });
 // //////////////////////////////////////////////////////////////////////////////////////
