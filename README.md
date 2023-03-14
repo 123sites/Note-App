@@ -1,4 +1,5 @@
 # ⭐ Note App ⭐
+![License Badge](https://img.shields.io/github/license/123sites/Note-App) ![Top Language](https://img.shields.io/github/languages/top/123sites/Note-App)
 
 ## Description ✏️
 
