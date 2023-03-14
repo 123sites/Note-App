@@ -2,12 +2,12 @@
 
 ## Description ✏️
 
-This is.......................
+This is an application that is used to write and save notes.  It uses Express.js on the back end, saves and retrieves notes from a JSON file.  This helps to organize the client's thoughts and keeps track of the tasks that need to be done.
 
 ## Installation 🔑
 
 1.  Download or clone the repository,
-2.  ```Node.js``` is the backend to run this application,
+2.  ```Node.js``` is the back end to run this application,
 3.  ```npm i``` will install the listed dependencies packages.
 
 You can find the link to the repository at:
@@ -15,11 +15,8 @@ You can find the link to the repository at:
 
 ## Usage
 
-This can be used by anyone who...
-
-## Video Demonstration 🎯
-
-[Click here to see the video](.mp4)
+This can be used by anyone who wants to help organize their thoughts and
+keep track of what needs to be done.
 
 ## Screenshot 🎯
 
