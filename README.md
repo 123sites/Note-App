@@ -7,9 +7,8 @@ This is.......................
 ## Installation 🔑
 
 1.  Download or clone the repository,
-2.  ```Node.js``` is required to run this application,
-3.  ```npm``` and ```Inquirer``` will need to be installed as well.
-4.  This uses ``Heroku`` to view on a server.
+2.  ```Node.js``` is the backend to run this application,
+3.  ```npm i``` will install the listed dependencies packages.
 
 You can find the link to the repository at:
 [Repository link](https://github.com/123sites/Note-App.git)
@@ -46,5 +45,4 @@ So far, I have the `Pull Shark` and `Yolo` badges on GitHub.  Click to view them
 - Node.js
 - Heroku
 - Express
-- Inquirer
 - JavaScript
