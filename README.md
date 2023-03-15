@@ -14,10 +14,14 @@ This is an application that is used to write and save notes.  It uses Express.js
 You can find the link to the repository at:
 [Repository link](https://github.com/123sites/Note-App.git)
 
-## Usage
+## Usage 🎯
 
 This can be used by anyone who wants to help organize their thoughts and
 keep track of what needs to be done.
+
+## Connection 🎯
+
+[View Via Heroku](https://vast-mountain-72625.herokuapp.com/notes)
 
 ## Screenshot of Written Note 🎯
 
