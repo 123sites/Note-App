@@ -21,15 +21,15 @@ keep track of what needs to be done.
 
 ## Screenshot of Written Note 🎯
 
-[Click here to see the written note screenshot](./public/assets/images/Notes%20Written.png)
+![Click here to see the written note screenshot](./public/assets/images/Notes%20Written.png)
 
 ## Screenshot of Saved Note 🎯
 
-[Click here to see the saved note screenshot](./public/assets/images/Notes%20Saved.png)
+![Click here to see the saved note screenshot](./public/assets/images/Notes%20Saved.png)
 
 ## Screenshot of Deleted Note 🎯
 
-[Click here to see the deleted note screenshot](./public/assets/images/Notes%20Deleted.png)
+![Click here to see the deleted note screenshot](./public/assets/images/Notes%20Deleted.png)
 
 ## Credits 👈
 
