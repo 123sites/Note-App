@@ -2,13 +2,13 @@ const router = require("express").Router();
 const fs = require("fs");
 var uniqid = require("uniqid");
 
-// console.log(uniqid());
+console.log(uniqid());
 
 // GET request for notes
 router.get("/notes", (req, res) => {
   fs.readFile("./db/db.json", "utf8", (err, data) => {
     if (err) {
-      // console.error(err);
+      console.error(err);
     } else {
       const parsedNotes = JSON.parse(data);
       res.json(parsedNotes);
@@ -35,7 +35,7 @@ router.post("/notes", (req, res) => {
 
     // Reads the db.json file and return all saved notes as JSON.
     fs.readFile("./db/db.json", "utf8", (err, data) => {
-      // console.log("Getting notes");
+      console.log("Getting notes");
       if (err) {
         console.error(err);
       } else {
@@ -61,7 +61,7 @@ router.post("/notes", (req, res) => {
         status: "success",
         body: newNote,
       };
-      // console.log(response);
+      console.log(response);
       res.status(201).json(response);
     });
 
@@ -82,7 +82,7 @@ router.delete("/notes/:id", function (req, res) {
     let notes = JSON.parse(data);
     // let notes = JSON.parse(notesData);
     let notesId = req.params.id;
-    let newNotesId = 0;
+    let newNoteId = 0;
 
     notes = notes.filter((currNote) => {
       return currNote.id != notesId;
@@ -94,7 +94,7 @@ router.delete("/notes/:id", function (req, res) {
       "utf8",
       (err, data) => {
         if (err) throw err;
-        // console.log("Success!");
+        console.log("Success!");
       }
     );
 

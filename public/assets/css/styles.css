@@ -1,8 +1,19 @@
-html,
 body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: #F5E0B7;
+}
+
+h1,
+h4 {
+  color: rgb(5, 74, 145);
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+a {
+  letter-spacing: 3px;
 }
 
 .save-note {
@@ -12,13 +23,15 @@ body {
 .icons i {
   margin-left: 15px;
   margin-right: 15px;
-  font-size: 1.5rem;
+  font-size: 2rem;
   cursor: pointer;
 }
 
 .note-textarea,
 .note-title {
-  color: #000000;
+  background-color: #f9eedb;
+  font-weight: bolder;
+  font-size: 30px;
   width: 100%;
   outline: none;
   border: none;
@@ -28,20 +41,27 @@ body {
   resize: none;
   height: calc(100% - 63px);
   padding-top: 15px;
+  padding-left: 10px;
+  margin-right: 10px;
 }
 
 .note-title {
-  height: 50px;
-  margin-top: 13px;
+  /* height: 50px;
+  margin-top: 13px; */
+  padding: 5px;
   font-size: 3rem;
+  font-weight: bolder;
+  color: #083D77;
+  background-color: white;
 }
 
 .note-title:read-only,
 .note-textarea:read-only {
-  color: #757575;
+  color: #083D77;
 }
 
 .list-container .card {
+  background-color: #f9eedb;
   height: calc(100vh - 70px);
   border-bottom: none;
   border-bottom-right-radius: 0;
@@ -62,7 +82,11 @@ body {
 
 .list-item-title {
   display: inline-block;
-  width: 75%;
+  min-width: 100%;
+  font-weight: bolder;
+  color: #9A031E;
+  letter-spacing: 2px;
+  font-size: 28px;
 }
 
 .list-container i {
@@ -76,3 +100,31 @@ body {
   padding: 20px;
   cursor: pointer;
 }
+
+.btn {
+  padding: 15px;
+  margin: 15px;
+  font-size: 18px;
+  font-weight: bolder;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #9a031e;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #021d11;
+  letter-spacing: 2px;
+}
+
+.btn:hover {
+  background-color: #f5e0b7;
+  color: #9a031e;
+}
+
+.btn:active {
+  background-color: #ef626c;
+  box-shadow: 0 5px #021e3a;
+  transform: translateY(4px);
+}
+
